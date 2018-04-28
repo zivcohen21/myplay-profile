@@ -7,7 +7,7 @@ module.exports = function(app) {
         form.parse(req, function (err, fields, files) {
             var oldpath = files.filetoupload.path;
             var newpath = __dirname + '/../public/img/' +  'profilePic.png';
-            fs.rename(oldpath, newpath, function (err) {
+            fs.copyFile(oldpath, newpath, function (err) {
                 if (err) throw err;
                 res.redirect('/');
                 res.end();
