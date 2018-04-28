@@ -1,0 +1,114 @@
+//colors
+$color_elm_approx: #1a8375;
+$color_san_juan_approx: #1f4c69;
+$color_sage_approx: #9bb285;
+$color_silver_approx: #bebebe;
+$color_chicago_approx: #5e5e5e;
+
+.profilePic-large {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  border: 3px solid $color_elm_approx;
+  width: 28%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+  display: block;
+  position: relative;
+}
+.grad {
+  position: absolute;
+  background: linear-gradient(to bottom right, $color_san_juan_approx, $color_sage_approx);
+  width: 100%;
+  height: 100px;
+  display: block;
+  top: 63px;
+}
+.updatePic {
+  position: absolute;
+  margin-top: 5%;
+  left: 50%;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  text-decoration: none;
+  color: $color_elm_approx;
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.message {
+  position: absolute;
+  margin-top: 15px;
+  left: 50%;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  text-decoration: none;
+  color: $color_elm_approx;
+  background: none!important;
+  border: none;
+  padding: 0!important;
+}
+.signupForm {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  margin-top: 15%;
+}
+.signup-submitBtn {
+  margin: 20% auto 40% auto;
+  width: 133px;
+  height: 40px;
+  display: block;
+  font-size: 16px;
+  position: relative;
+  background-color: $color_elm_approx;
+  border-style: none;
+  color: $color_silver_approx;
+}
+.signup-form-input {
+  font-size: 12px;
+  padding: 37px 1px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid $color_chicago_approx;
+  text-align: right;
+  color: $color_elm_approx;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: transparent;
+}
+.file-form {
+  margin-top: 15%;
+}
+.file-submitBtn {
+  margin: 10% auto 10% auto;
+  width: 133px;
+  height: 40px;
+  display: block;
+  font-size: 16px;
+  position: relative;
+  background-color: $color_elm_approx;
+  border-style: none;
+  color: $color_silver_approx;
+}
+.file-input {
+  font-size: 12px;
+  text-align: right;
+  color: $color_elm_approx;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  display: block;
+  padding: 5px 1px 1px 90px;
+}
+::placeholder {
+  color: $color_elm_approx;
+  opacity: 1;
+}

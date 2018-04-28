@@ -1,0 +1,39 @@
+//colors
+$black: black;
+$color_elm_approx: #1a8375;
+$color_mine_shaft_approx: #333333;
+
+.header {
+  background-color: $black;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+}
+.leftPart {
+  position: relative;
+  background-color: $color_elm_approx;
+  width: 23%;
+  height: 98%;
+}
+.icon {
+  width: 70%;
+  padding: 10% 15%;
+}
+.rightPart {
+  position: absolute;
+  top: 13%;
+  right: 3%;
+  width: 15%;
+}
+.profilePic-small {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  width: 90%;
+}
+.container {
+  position: absolute;
+  background-color: $color_mine_shaft_approx;
+  margin: -8px;
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+<div data-ng-controller="BodyController" data-ng-init="getDetails()">
+  <!--  <img class="bodyHeader" src="../../assets/bodyHeader.png">-->
+    <div class="grad">
+
+    </div>
+    <img class="profilePic-large" src="../img/profilePic.png">
+    <button ng-if="!update" class="updatePic" ng-click="updatePic()">עדכן תמונה</button>
+    <button ng-if="update" class="updatePic" ng-click="updatePic()">סגור</button>
+    <form ng-if="update" class="file-form" action="api/fileupload" method="post" enctype="multipart/form-data">
+        <input class="file-input" type="file" name="filetoupload" required ><br >
+        <button class="file-submitBtn" type="submit">עדכן תמונה</button>
+    </form>
+    <form class="signupForm">
+        <input class="signup-form-input" data-ng-model="user.name" id="name" type="text" placeholder="שם"/>
+        <input class="signup-form-input" data-ng-model="user.lastName" id="lastName" type="text" placeholder="שם משפחה"/>
+        <input class="signup-form-input" data-ng-model="user.password" id="password" type="password" placeholder="סיסמא"/>
+        <input class="signup-form-input" data-ng-model="user.newPassword" id="newPassword" type="password" placeholder="סיסמא חדשה"/>
+        <input class="signup-form-input" data-ng-model="user.phone" id="phone" type="text" placeholder="טלפון"/>
+        <button class="signup-submitBtn" type="submit" ng-click="setDetails()">שמור שינויים</button>
+    </form>
+</div>
