@@ -17,8 +17,10 @@ $color_mine_shaft_approx: #333333;
   height: 98%;
 }
 .icon {
+  position: absolute;
   width: 70%;
-  padding: 15% 15%;
+  left: 15%;
+  top: 19%;
 }
 .rightPart {
   position: absolute;

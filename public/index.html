@@ -1,20 +1,20 @@
 <!doctype html>
 
-
-<html ng-app="scotchTodo">
+<html ng-app="myplay">
 <head>
 	<!-- META -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>my play</title>
+	<title>My Play</title>
 
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 
-	<script src="core.js"></script>
+	<script src="app.js"></script>
     <script src="header/header.controller.js"></script>
     <script src="body/body.controller.js"></script>
 	<script src="menu/menu.controller.js"></script>
+
     <link rel="stylesheet" href="header/header.css">
     <link rel="stylesheet" href="body/body.css">
 	<link rel="stylesheet" href="menu/menu.css">
@@ -26,6 +26,5 @@
         <div ng-include="'body/body.view.html'"></div>
 		<div ng-include="'menu/menu.view.html'"></div>
 	</div>
-
 </body>
 </html>

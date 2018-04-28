@@ -1,5 +1,5 @@
 angular.module('body', []);
-function BodyController ($scope, $http, $location) {
+function BodyController ($scope, $http) {
 
     $scope.update = false;
 

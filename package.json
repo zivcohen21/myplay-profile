@@ -17,7 +17,6 @@
     "sass-loader": "^7.0.1"
   },
   "scripts": {
-    "scss":  "node-sass --include-path scss public/body/body.scss public/body/body.css --output-style=expanded --indent-type=tab --indent-width=1 && node-sass --include-path scss public/header/header.scss public/header/header.css --output-style=expanded --indent-type=tab --indent-width=1 && node-sass --include-path scss public/menu/menu.scss public/menu/menu.css --output-style=expanded --indent-type=tab --indent-width=1"
+    "scss": "node-sass --include-path scss public/body/body.scss public/body/body.css --output-style=expanded --indent-type=tab --indent-width=1 && node-sass --include-path scss public/header/header.scss public/header/header.css --output-style=expanded --indent-type=tab --indent-width=1 && node-sass --include-path scss public/menu/menu.scss public/menu/menu.css --output-style=expanded --indent-type=tab --indent-width=1"
   }
-
 }
