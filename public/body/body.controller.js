@@ -2,6 +2,7 @@ angular.module('body', []);
 function BodyController ($scope, $http) {
 
     $scope.update = false;
+    $scope.userDetails = null;
 
     $scope.getDetails = function () {
         $http.get('api/getDetails').success(function(data) {
@@ -16,14 +17,14 @@ function BodyController ($scope, $http) {
 
     $scope.setDetails = function () {
 
-        var userDetails = {
+       /* var userDetails = {
             name: document.getElementById("name").value,
             lastName: document.getElementById("lastName").value,
             password: document.getElementById("password").value,
             newPassword: document.getElementById("newPassword").value,
             phone: document.getElementById("phone").value
-        };
-        $http.post('api/setDetails', userDetails)
+        };*/
+        $http.post('api/setDetails', $scope.user)
             .error(function(data) {
                 console.log('Error: ' + data);
             });
